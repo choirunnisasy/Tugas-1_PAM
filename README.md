@@ -1,48 +1,42 @@
-This is a Kotlin Multiplatform project targeting Android, iOS, Desktop (JVM).
+# Tugas Praktikum Minggu 1 - Pengembangan Aplikasi Mobile
 
-* [/composeApp](./composeApp/src) is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - [commonMain](./composeApp/src/commonMain/kotlin) is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    the [iosMain](./composeApp/src/iosMain/kotlin) folder would be the right place for such calls.
-    Similarly, if you want to edit the Desktop (JVM) specific part, the [jvmMain](./composeApp/src/jvmMain/kotlin)
-    folder is the appropriate location.
+Tugas ini merupakan bagian dari mata kuliah **IF25-22017 Pengembangan Aplikasi Mobile** di Program Studi Teknik Informatika, Institut Teknologi Sumatera (ITERA).
 
-* [/iosApp](./iosApp/iosApp) contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform,
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
-
-### Build and Run Android Application
-
-To build and run the development version of the Android app, use the run configuration from the run widget
-in your IDE’s toolbar or build it directly from the terminal:
-- on macOS/Linux
-  ```shell
-  ./gradlew :composeApp:assembleDebug
-  ```
-- on Windows
-  ```shell
-  .\gradlew.bat :composeApp:assembleDebug
-  ```
-
-### Build and Run Desktop (JVM) Application
-
-To build and run the development version of the desktop app, use the run configuration from the run widget
-in your IDE’s toolbar or run it directly from the terminal:
-- on macOS/Linux
-  ```shell
-  ./gradlew :composeApp:run
-  ```
-- on Windows
-  ```shell
-  .\gradlew.bat :composeApp:run
-  ```
-
-### Build and Run iOS Application
-
-To build and run the development version of the iOS app, use the run configuration from the run widget
-in your IDE’s toolbar or open the [/iosApp](./iosApp) directory in Xcode and run it from there.
+## Identitas Mahasiswa
+* **Nama:** Choirunnisa Syawaldina
+* **NIM:** 123140136
+* **Kelas:** Pengembangan Aplikasi Mobile RB (Genap 2025/2026) 
 
 ---
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+## Deskripsi Tugas
+[Tugas praktikum minggu ke-1 ini mencakup:
+1. Setup environment pengembangan menggunakan Android Studio, KMP Plugin, dan JDK 17.
+2. Membuat proyek baru dengan template Compose Multiplatform.
+3. Modifikasi kode program untuk menampilkan:
+    * Nama Lengkap ("Halo, Choirunnisa Syawaldina!") 
+    * NIM Mahasiswa
+    * Nama Platform yang sedang digunakan (Android/Desktop) 
+4. Menjalankan aplikasi pada minimal satu platform.
+
+---
+
+## Hasil Implementasi (Screenshot)
+Berikut adalah bukti aplikasi yang telah dimodifikasi dan dijalankan:
+
+### Platform Desktop
+<img width="1172" height="891" alt="Screenshot 2026-02-08 194848" src="https://github.com/user-attachments/assets/15ddd399-f0f4-4c8a-8f16-7d791f73e55c" />
+
+<img width="1172" height="894" alt="Screenshot 2026-02-08 194838" src="https://github.com/user-attachments/assets/568b14a4-e4f0-4aad-93a4-66e1a88716c1" />
+
+
+
+
+
+---
+
+## Teknologi yang Digunakan
+* [cite_start]**Language:** Kotlin [cite: 145]
+* [cite_start]**Framework:** Kotlin Multiplatform & Compose Multiplatform [cite: 148, 151]
+* [cite_start]**Build System:** Gradle (Kotlin DSL) [cite: 290]
+* [cite_start]**IDE:** Android Studio [cite: 247]
